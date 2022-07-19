@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const WeatherSearch = () => {
   const [locationData, setLocationData] = useState();
   const [searchText, setSearchText] = useState("");
+  const [test, setTest] = useState("");
 
   const getLocations = async (e) => {
     e.preventDefault();
