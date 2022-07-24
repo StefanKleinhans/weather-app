@@ -1,9 +1,9 @@
 import React from "react";
 
-const Location = () => {
+const Location = ({ name, onClick }) => {
   return (
-    <div className="location">
-      <div>Location Name, Country Name</div>
+    <div className="location" onClick={onClick}>
+      <div>{name}</div>
     </div>
   );
 };

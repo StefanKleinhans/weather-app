@@ -3,8 +3,17 @@
   font-family: sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: rgb(36, 36, 36);
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
 }
 
 .header {
@@ -42,6 +51,7 @@ form {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  height: 35px;
   width: 85%;
   justify-content: center;
   background-color: rgb(237, 237, 237);
@@ -58,6 +68,39 @@ form input {
 }
 
 .location {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  color: #fff;
+  margin: 15px 0;
+  padding: 10px 0;
+  border-radius: 0.35rem;
+  background-color: rgb(121, 121, 121);
+  width: 30%;
+  cursor: pointer;
+}
+
+.weather-comp {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 10rem;
+  border-radius: 0.35rem;
+  background-color: rgb(121, 121, 121);
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar {
+  background-color: rgb(224, 224, 224);
+  height: 100%;
+}
+
+.menu-items {
+  list-style-type: none;
+  padding: 0;
+  color: rgb(36, 45, 217);
 }

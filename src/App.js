@@ -1,15 +1,19 @@
-import { useState } from "react";
-import Header from "./components/Header";
 import WeatherSearch from "./components/WeatherSearch";
-import Location from "./components/Location";
+import { WeatherProvider } from "./context/WeatherContext";
+import LocationList from "./components/LocationList";
+import WeatherList from "./components/WeatherList";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <WeatherSearch />
-      <Location />
-    </div>
+    <WeatherProvider>
+      <div className="App">
+        <Navbar />
+        <WeatherSearch />
+        <LocationList />
+        <WeatherList />
+      </div>
+    </WeatherProvider>
   );
 }
 
