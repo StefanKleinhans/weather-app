@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import { WeatherProvider } from "./context/WeatherContext";
 
 function App() {
+  console.log("Hello World");
   return (
     <WeatherProvider>
       <div className="App">
