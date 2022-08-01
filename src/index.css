@@ -1,106 +1,135 @@
 * {
   margin: 0;
-  font-family: sans-serif;
-}
-
-html {
-  height: 100%;
 }
 
 body {
-  background-color: rgb(36, 36, 36);
+  font-family: "Saira", sans-serif;
+  color: rgb(238, 238, 238);
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App {
+header {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 50px;
 }
 
-.header {
-  min-height: 4rem;
-  background: rgb(242, 223, 83);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.socialMedia {
+  font-size: 20px;
 }
 
-.weather-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2rem;
-  padding: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.socialMedia > * {
+  margin: 5px;
 }
 
-.weather-item {
-  margin: 0.6rem;
-  padding: 0.4rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  width: 15rem;
-  height: 7rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  font-size: 26px;
-  color: rgb(228, 228, 228);
-}
-
-form {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  height: 35px;
-  width: 85%;
-  justify-content: center;
-  background-color: rgb(237, 237, 237);
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 0.35rem;
-}
-
-form input {
-  border: 1px solid rgb(171, 171, 171);
-  border-radius: 0.35rem;
-  padding: 10px;
-  width: 50%;
-}
-
-.location {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  color: #fff;
-  margin: 15px 0;
-  padding: 10px 0;
-  border-radius: 0.35rem;
-  background-color: rgb(121, 121, 121);
-  width: 30%;
+.selectLocation {
   cursor: pointer;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  transition: 0.3s;
 }
 
-.weather-comp {
+.selectLocation:hover {
+  background-color: rgb(235, 235, 235);
+  color: rgb(22, 22, 22);
+  transition: 0.3s;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.mainContainer {
+  padding: 0 75px;
+}
+
+.dateContainer h1,
+p {
+  transition: 0.2s;
+}
+
+.dateLoc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 15rem;
+  width: calc(100% - 64px);
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background: rgba(25, 41, 63, 0.507);
+}
+
+.mainWeather {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.weatherIconMain {
+  padding: 10px;
+}
+
+.temp {
+  font-size: 40px;
+}
+
+.dayWeek {
+  font-size: 17px;
+  background-color: rgb(25, 41, 63);
+  text-align: center;
+  padding: 5px;
+  border-radius: 40px;
+}
+
+.weatherIcon {
+  height: 75px;
+}
+
+.otherDaysWeather {
+  position: relative;
+  height: 100%;
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(238, 238, 238);
+  height: 60%;
+  width: 40%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.modal form {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  width: 10rem;
-  border-radius: 0.35rem;
-  background-color: rgb(121, 121, 121);
-  color: #fff;
-  padding: 10px 0;
+  color: black;
 }
 
-.navbar {
-  background-color: rgb(224, 224, 224);
-  height: 100%;
-}
-
-.menu-items {
-  list-style-type: none;
-  padding: 0;
-  color: rgb(36, 45, 217);
+.modal form input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
 }
